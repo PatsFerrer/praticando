@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width:1.5px;
+    background: linear-gradient(red,yellow);
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 300px; 
+ }
+.ParagrafoDaFoto {
+  
+   margin-top: 0;
+ }
+
+ .marcacao {
+  background-color: lime;
+}
+
+section {
+    height: 100vh;
+    background-image: url("https://conteudo.imguol.com.br/c/parceiros/c3/2020/06/14/bob-esponja-a-um-personagem-lgbt-confirma-nickelodeon-revelaaao-acontece-durante-mas-do-orgulho-1592150312289_v2_900x506.jpg.webp");
+}
+
+.bob {
+    height: 512px;
+    background-image: url("https://f.i.uol.com.br/fotografia/2020/06/14/15921423585ee62a161e16c_1592142358_3x2_md.jpg");
+}
+
+.no-repeat{
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: black;
+}
+
+.box > p {
+    background-color: lightgreen;
+    display: inline-block;
+    width: 300px;
+}
+
+#parallax {
+    height: 500px;
+    background-image: url(https://w0.peakpx.com/wallpaper/351/612/HD-wallpaper-bob-sponja-bob-bob-esponja-sponja-sponge-bob.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#parallax2 {
+    height: 500px;
+    background-image: url(https://sm.ign.com/ign_br/news/n/nickelodeo/nickelodeon-announces-spongebob-squarepants-prequel-series-a_bj71.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/3f/e7/9c/3fe79cec95fd6ec7827755cc5e23b188.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Praticando</h1>
+<hr>
+<h2>Tudo que aprendi com palavras!</h2>
+<p>Frases com <STRONG>STRONG.</STRONG></p>
+<p>Frases com <em>ênfase.</em></p>
+<p>Frases com <ins>inserido.</ins></p>
+<p>Frases <del>deletadas.</del></p>
+<p>Frases <mark>marcadas.</mark></p>
+<p>Aprendemos a alterar a <mark class="marcacao">cor das marcações</mark>.</p>
+<p>Aprendemos a deixar as <small>letras pequenas</small>.</p>
+<p>Textos sobrescritos <strong>x<sup>2</strong></sup> + 2</p>
+<p>Textos subscritos <strong>H<sub>2</sub>O</strong></p>
+
+<p>Aprendemos a citar códigos</p>
+
+<p>Olhe o código abaixo:</p>
+
+<pre>
+    <code>
+     python é maneiro
+     entao é isso
+     valeu pessoal
+    </code>
+</pre>
+
+<p>Citações</p>
+Veja essa citação de Irineu: <q>A pats é uma panqueca muito goxtosa</q>.
+
+<p>Citaçoes em bloco</p>
+Como diz Irineu em seu livro:
+<blockquote><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque modi consequatur corporis vel quisquam vitae, deserunt molestias placeat possimus adipisci ea, dolores, minima quae eius dolorem impedit quibusdam. Natus.</q></blockquote>
+
+<p>Aprendemos abreviações:</p>
+<p> Estão abertas as inscrições da <abbr title="Universidade de São Paulo">USP</abbr>. Veja como se inscrever.</p>
+
+<p>Agora a tag mais inutil: <bdo dir="rtl">A de inverter o texto</bdo>.</p>
+
+<h2>Aprendi a colocar imagens!</h2>
+
+<img src="https://recreio.uol.com.br/media/_versions/animacoes/bob_esponja_capa_widelg.jpg" alt="Bob Esponja">
+
+<p class="ParagrafoDaFoto"><small>Mas não a centralizar as imagens LOL.</small></p>
+
+<h2>Apredi a colocar fotos nas sections nas CSS</h2>
+
+<section>
+    [FOTO BOB ESBONJA DENTRO DA SECTION]
+</section>
+
+<p>O bob repete varias vezes, né?</p>
+<p>isso é pq vc configurou para que ele aparecesse nas CSS da section com  <code>height: 100vh;</code></p>
+<p>o ideal é sempre vc saber o tamanho da imagem, por exemplo.. essa imagem é 	900 × 506 px (descobri usando o devtools, e deixando o ponteiro do mouse em cima do link da imagem).</p>
+
+<p>Para que ele apareça somente uma vez, usaremos o <code>background-repeat: no repeat</code></p>
+
+<p>Vamos abrir uma div no HTML e configurar  ela nas CSS, lembre de sempre colocar o <code>height:</code> senão a imagem nem vai aparecer</p>
+
+<div class="bob"></div>
+
+<p>Usamos a altura original dele, mas por padrão ele vai repetir e ocupar toda a largura.. pra ele nao repetir, usaremos o <code>no repeat</code></p>
+
+<div class="bob no-repeat"></div>
+
+<p>Note que criamos outra class chamada 'no-repeat', e colocamos o segundo bob com as duas classes.. a anterior e a nova. Veja nas CSS!</p>
+
+<h2>Vamos tentar usar o efeito PARALLAX</h2>
+<p>
+    Primeiro, vamos criar uma div com class 'box' e colocar um paragrafo nele. <br>
+    Também iremos adicionar aqui um fundo verde claro no paragrafo e um fundo preto da div.. e colocar <code>display:inline-block</code> no paragrafo para que a caixa verde fique dentro  da box preta. lembrando que tb devemos colocar o <code>width: 300px;</code> para a caixa do <code>&lt;p&gt;</code> ficar menor.
+</p>
+
+<div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium harum maiores ut. Expedita tempore saepe doloribus aliquid ut ullam aspernatur obcaecati. Temporibus itaque ut amet repellat nostrum facere illum?</p>
+</div>
+
+<p>Belezinha até aqui? Qualquer coisa, veja o codigo no inspecionar.</p>
+
+<p>Agora vamos adicionar o PARALLAX:</p>
+
+<div class="box" id="parallax">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium harum maiores ut. Expedita tempore saepe doloribus aliquid ut ullam aspernatur obcaecati. Temporibus itaque ut amet repellat nostrum facere illum?</p>
+</div>
+<p>aumentei um pouco o tamanho da nossa box para ficar mais facil de entender</p>
+<p>e tcharam.. olha só, deu pra ver que o Bob ficou no fundo, centralizado e sem rolar junto com a página! <br>
+Legal, ne?</p>
+
+<div class="box" id="parallax2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium harum maiores ut. Expedita tempore saepe doloribus aliquid ut ullam aspernatur obcaecati. Temporibus itaque ut amet repellat nostrum facere illum?
+    </p>
+</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit tempore recusandae commodi sunt doloribus accusantium accusamus ratione repellendus quaerat possimus incidunt, sequi vel obcaecati optio ipsa impedit perferendis! Incidunt molestiae odit, at eligendi magnam earum cum sed blanditiis dignissimos quis doloremque ipsa officiis totam sunt veniam aliquam tenetur tempora impedit nesciunt. Blanditiis temporibus, voluptates illo non, sunt nisi optio dignissimos earum maxime veniam corporis et repudiandae dolor fugiat velit harum nesciunt reiciendis minima quasi quisquam nam facere impedit. Rem quisquam adipisci consectetur repellendus error dicta autem similique accusamus quia ut sit, est a repellat. Modi dolor deleniti iusto doloremque debitis officia hic, placeat cum assumenda sapiente eveniet exercitationem iste sit perferendis amet mollitia consequuntur rem earum architecto dolores facere quia id est? A eius ad molestiae exercitationem repellendus, sunt numquam asperiores tenetur consequuntur doloribus nostrum temporibus, tempora hic veritatis, vero blanditiis! Fugit distinctio aperiam consequatur provident cumque blanditiis odio deleniti. Reprehenderit obcaecati autem quod perferendis ex accusantium aperiam adipisci repellendus nostrum ab, ut deserunt dicta repudiandae consequatur asperiores voluptate similique quo odio iste culpa eius. Autem dignissimos iusto distinctio explicabo eligendi nostrum qui sequi id ab commodi fuga libero veritatis porro, obcaecati inventore sit, odio iure voluptate laborum facilis eius? Voluptates optio soluta sit possimus voluptate natus sapiente neque et. At quos est dolor error laboriosam quaerat officia facere laudantium esse, deserunt eaque cumque recusandae voluptate, accusamus reiciendis accusantium possimus sit dignissimos? Totam minus unde quod placeat fuga molestiae facere quaerat libero tenetur quae, pariatur laudantium, cumque numquam modi doloremque consectetur maxime voluptatum culpa dolor ipsam! Officiis nostrum eveniet deserunt veritatis voluptates quisquam quidem quas commodi perferendis, maiores, officia sunt placeat iste in, voluptas iusto impedit. Quo voluptates ullam sint atque cupiditate perspiciatis reiciendis, impedit aperiam neque, eum expedita in. Dolore, ab! Dignissimos nihil cumque, quis soluta minima possimus dolorem error, veniam itaque saepe voluptatibus sint molestiae neque iste libero aliquam recusandae quas? Aut, veritatis neque rerum maiores vitae harum perferendis in nihil laboriosam quam perspiciatis praesentium! Itaque natus a explicabo magnam quod in, ipsa fugiat asperiores nostrum mollitia placeat quaerat maxime incidunt minima nobis commodi quasi illum repellat ea nemo. Magnam, provident! Vel voluptas deserunt odit explicabo accusantium enim nulla distinctio nostrum placeat in inventore blanditiis dolore veritatis amet, ea, totam excepturi aliquam error impedit culpa minima. Ipsam, deleniti ducimus. Laborum id provident dignissimos dolorum. Odio, perspiciatis. Ullam reprehenderit recusandae assumenda consequatur voluptatum nemo odit architecto. Reiciendis sequi et perspiciatis illo odit praesentium, ad consectetur eveniet fugit fuga accusamus alias eum velit assumenda. Ipsam sapiente maiores ex nobis tempore animi repellendus itaque veritatis officia maxime quidem nisi magnam quae vero nam suscipit cupiditate quos dolores ullam, aspernatur corporis aperiam minus illum quas? Alias hic eum veritatis asperiores blanditiis architecto voluptatum impedit debitis ratione quo, ullam tenetur quae, excepturi sapiente. Voluptatibus repellendus eum repudiandae possimus laborum, laboriosam doloremque accusantium itaque ducimus perferendis quo officia aliquam tenetur quidem non deserunt iure libero quis atque! A dolores nam optio libero! Architecto, rerum ipsam. Consectetur sint ea officia repellendus suscipit illum, qui nulla.</p>
+</body>
+</html>

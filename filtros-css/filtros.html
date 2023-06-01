@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros em CSS</title>
+    <link rel="stylesheet" href="css/global.css">
+    <style>
+        .blur {
+            filter: blur(50px);
+        }
+
+        .brightness {
+            filter: brightness(60%);
+        }
+
+        .contrast{
+            filter: contrast(200%);
+        }
+
+        .greyscale {
+            filter: grayscale(100%);
+        }
+
+        .opacity {
+            filter: opacity(70%);
+        }
+
+        .saturate {
+            filter: saturate(10%);
+        }
+
+        .sepia{
+            filter: sepia(50%);
+        }
+
+        .hueRotate {
+            filter: hue-rotate(90deg);
+        }
+
+        .dropShadow{
+            filter: drop-shadow(10px 10px 10px #4f23a1);
+            box-shadow: 2px 2px 10px red;
+        }
+
+        .brightnessContrast {
+            filter: brightness(150%) contrast(150%) hue-rotate(50deg);
+        } 
+
+        .blurTransition {
+            filter: blur(20px);
+            transition: filter 0.2s;
+        }
+
+        .blurTransition:hover {
+            filter: blur(0px);
+        }
+
+        @keyframes hueRotateAnimation {
+            from {filter: hue-rotate(0deg)}
+            to {filter: hue-rotate(360deg)}
+        }
+
+        .hueAnimate {
+             animation: hueRotateAnimation 2s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filtros em CSS</h1>
+    
+    <h2>Blur</h2>
+    <img class="blur" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Brightness</h2>
+    <img class="brightness" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Contrast</h2>
+    <img class="contrast" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Greyscale</h2>
+    <img class="greyscale" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Opacity</h2>
+    <img class="opacity" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Saturate</h2>
+    <img class="saturate" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Sepia</h2>
+    <img class="sepia" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Hue Rotate</h2>
+    <img class="hueRotate" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Drop shadow</h2>
+    <img class="dropShadow" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Brightness + Contrast</h2>
+    <p>Dá para utilizar mais de um filtro dentro de um elemento</p>
+    <img class="brightnessContrast" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Blur + Transition</h2>
+    <img class="blurTransition" src="html-css-js.png" alt="">
+
+    <hr>
+
+    <h2>Hue Rotate + Animation</h2>
+    <img class="hueAnimate" src="html-css-js.png" alt="">
+
+    <hr>
+
+</body>
+</html>
